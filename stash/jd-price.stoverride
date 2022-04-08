@@ -3,14 +3,14 @@ desc: 京东比价
 
 http:
   mitm:
-    - "api.m.jd.com"
+    - api.m.jd.com
   script:
     - match: ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig)
-      name: jd-price
+      name: price
       type: response
       require-body: true
       timeout: 20
   script-providers:
-    jd-price:
+    price:
       url: https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
       interval: 86400
