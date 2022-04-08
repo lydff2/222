@@ -10,7 +10,7 @@ http:
       type: response
       require-body: true
       timeout: 20
-  script-providers:
-    price:
-      url: https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
-      interval: 86400
+script-providers:
+  price:
+    url: https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
+    interval: 86400
